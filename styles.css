@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.table-container {
+    width: 70vw;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+}
+.countries-container {
+    
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column;
+}
+.greyedColor{
+    background-color: #f2f2f2;
+}
+.total-death {
+    color:rgb(148, 0, 0);
+    font-weight: bold;
+    width: 70vw;
+    margin: auto;
+}
+.pagination {
+    color:rgb(243, 89, 0);
+    font-weight: bold;
+    width: 70vw;
+    margin: auto;
+}
+.line {
+    display: flex;
+}
+.data-line:hover {
+    background-color: #ddd;
+}
+.cell {
+    width: 50%;
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+.top-title {
+    font-weight: bold;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: left;
+    background-color: #04AA6D;
+    color: white;
+    cursor: pointer;
+}
+.search-box {
+    padding: 8px 0px;
+}
+.link {
+    cursor: pointer;
+    font-weight: bold;
+}
+.highlighted {
+    background-color:yellow
+}

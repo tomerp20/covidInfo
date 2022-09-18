@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Covid Countries Info</title>
+    <link rel="stylesheet" href="styles.css" >
+</head>
+<body>
+    <div class="table-container">
+        <div class="search-box">
+            <label>SearchBox:</label>
+            <input type="text" id="filterInput" />
+            <labe>Paginate?</labe>
+            <input type="checkbox" onchange="changePagination()" >
+            <span id="resultsPerPage"></span>
+        </div>
+        <div class="line">
+                <div class="cell top-title" onClick="sortByName()">Name</div>
+                <div class="cell top-title" onClick="sortByTotalDeath()">Total Death</div>
+                
+        </div>
+        <div id="countriesContainer" class="countries-container">
+        </div>
+    </div>
+    <div id="totalDeath" class="total-death">
+
+    </div>
+    <div id="pagination" class="pagination">
+
+    </div>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
